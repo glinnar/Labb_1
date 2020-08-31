@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Dicegame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int higscore[] = new int[3];
+        int higscore[] = new int[50];
         int playerThrows;
         int amountOfThrows;
         int sideOfDice = 6;
@@ -14,7 +14,7 @@ public class Dicegame {
         int playersScore = 0;
         int computerScore = 0;
         int menuChoice;
-        System.out.println(" Hej och välkommen  till Tärningen .Vänligen skriv in ditt namn");
+        System.out.println(" Hej och välkommen till Tärningen. Vänligen skriv in ditt namn");
         String playerName = scanner.nextLine();
         System.out.println("Hej " + playerName + " Du kommer nu få välja mellan tre val");
         boolean gameOn = true;
@@ -47,6 +47,7 @@ public class Dicegame {
 
                     if (playersScore > computerScore) {
                         System.out.println(playerName + " Vinner");
+                        System.out.println(playersScore + " Tillagt i listan.");
                         higscore[checker] = playersScore;
                         checker++;
 
@@ -59,6 +60,7 @@ public class Dicegame {
 
                     } else if (playersScore < computerScore) {
                         System.out.println("Datorn vinner");
+                        System.out.println(computerScore + " Tillagt i listan.");
                         higscore[checker] = computerScore;
                         checker++;
 
@@ -89,8 +91,8 @@ public class Dicegame {
     }
 
     public static void printHighScore(int sortedArray[]) {
-        for (int i = 0; i < sortedArray.length; i++) {
-            System.out.println("Placering " + " Med poäng " + sortedArray[i]);
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Placering " + i + " Med poäng " + sortedArray[i]);
         }
     }
 
