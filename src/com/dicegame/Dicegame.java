@@ -51,10 +51,10 @@ public class Dicegame {
                         higscore[checker] = playersScore;
                         checker++;
 
-                        if (higscore[checker] == higscore.length - 1) {
+                        /*if (higscore[checker] == higscore.length - 1) {
                             higscore[3] = higscore.length - 1;
                             // en if här kanske? som kollar fall man kommit till slutet.
-                        }
+                        }*/
                         System.out.println("Spelare highscore: " + Arrays.toString(higscore));
                         System.out.println("Hej");
 
