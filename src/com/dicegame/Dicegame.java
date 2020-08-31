@@ -75,7 +75,7 @@ public class Dicegame {
 
                 case 2:
                     System.out.println("Du har valt 2");
-                    printHighScore(sortHighScoreList(higscore.clone()));
+                    printHighScore(sortHighScoreList(higscore));
 
                     break;
                 case 3:
@@ -90,27 +90,27 @@ public class Dicegame {
         }
     }
 
-    public static void printHighScore(int sortedArray[]) {
+    public static void printHighScore(int sortedHighScoreList[]) {
         for (int i = 0; i < 3; i++) {
-            System.out.println("Placering " + i + " Med poäng " + sortedArray[i]);
+            System.out.println("Placering " + i + " Med poäng " + sortedHighScoreList[i]);
         }
     }
 
 
-    public static int[] sortHighScoreList(int array[]) {
-        // int sortedArray[] = Arrays.copyOf(array, array.length);
+    public static int[] sortHighScoreList(int unSortedHighScorelist[]) {
+        int sortedHighScorelist[] = Arrays.copyOf(unSortedHighScorelist, unSortedHighScorelist.length);
         boolean sorted = true;
         while (sorted) {
             sorted = false;
-            for (int i = 0; i < array.length - 1; i++) {
-                if (array[i] < array[i + 1]) {
-                    int temp = array[i + 1];
-                    array[i + 1] = array[i];
-                    array[i] = temp;
+            for (int i = 0; i < sortedHighScorelist.length - 1; i++) {
+                if (sortedHighScorelist[i] < sortedHighScorelist[i + 1]) {
+                    int temp = sortedHighScorelist[i + 1];
+                    sortedHighScorelist[i + 1] = sortedHighScorelist[i];
+                    sortedHighScorelist[i] = temp;
                     sorted = true;
                 }
             }
         }
-        return array;
+        return sortedHighScorelist;
     }
 }
