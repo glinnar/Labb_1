@@ -14,9 +14,9 @@ public class Dicegame {
         int playersScore = 0;
         int computerScore = 0;
         int menuChoice;
-        System.out.println("Vänligen skriv in ditt namn");
+        System.out.println(" Hej och välkommen  till Tärningen .Vänligen skriv in ditt namn");
         String playerName = scanner.nextLine();
-        System.out.println("Hej " + playerName + " och välkommen  till Tärningen . Du kommer nu få välja mellan tre val");
+        System.out.println("Hej " + playerName + " Du kommer nu få välja mellan tre val");
         boolean gameOn = true;
         int checker = 0;
         while (gameOn) {
