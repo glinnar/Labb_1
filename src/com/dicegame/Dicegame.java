@@ -28,7 +28,7 @@ public class Dicegame {
 
             switch (menuChoice) {
                 case 1:
-                    System.out.println("Du har valt 1");
+                    System.out.println("Du har valt alternativ 1");
                     System.out.println("Hur många gånger vill du kasta?");
                     amountOfThrows = scanner.nextInt();
 
