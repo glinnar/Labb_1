@@ -67,6 +67,7 @@ public class Dicegame {
 
                     } else if (playersScore == computerScore) {
                         System.out.println("Lika");
+                        System.out.println(Arrays.toString(higscore));
                     }
                     break;
 
