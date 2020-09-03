@@ -17,6 +17,7 @@ public class Dicegame {
         System.out.println(" Hej och välkommen till Tärningen. Vänligen skriv in ditt namn");
         String playerName = scanner.nextLine();
         System.out.println("Hej " + playerName + " Du kommer nu få välja mellan tre val");
+
         boolean gameOn = true;
         int checker = 0;
         while (gameOn) {
@@ -28,22 +29,22 @@ public class Dicegame {
 
             switch (menuChoice) {
                 case 1:
-                    System.out.println("Du har valt alternativ 1");
+                    System.out.println("Du har valt att spela");
                     System.out.println("Hur många gånger vill du kasta?");
                     amountOfThrows = scanner.nextInt();
 
                     for (int i = 1; i <= amountOfThrows; i++) {
                         playerThrows = (int) (Math.random() * sideOfDice + 1);
                         computerThrows = (int) (Math.random() * sideOfDice + 1);
-                        System.out.println(playerName + " Kast " + i + " är " + playerThrows);
-                        System.out.println("Datorns Kast " + i + " är " + computerThrows);
+                        System.out.println(playerName + "s kast " + i + " är " + playerThrows);
+                        System.out.println("Datorns kast " + i + " är " + computerThrows);
                         System.out.println("________________________");
                         playersScore += playerThrows;
                         computerScore += computerThrows;
 
                     }
-                    System.out.println(playerName + " Score är " + playersScore);
-                    System.out.println("Datorns Score är " + computerScore);
+                    System.out.println(playerName + " totala score är " + playersScore);
+                    System.out.println("Datorns totala score är " + computerScore);
 
                     if (playersScore > computerScore) {
                         System.out.println(playerName + " Vinner");
@@ -68,7 +69,7 @@ public class Dicegame {
                     break;
 
                 case 2:
-                    System.out.println("Du har valt 2");
+                    System.out.println("Du har valt  att visa highscorelistan");
                     printHighScoreList(sortHighScoreList(higscore));
 
                     break;
