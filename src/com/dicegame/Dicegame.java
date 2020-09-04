@@ -43,11 +43,11 @@ public class Dicegame {
                         computerScore += computerThrows;
 
                     }
-                    System.out.println(playerName + " totala score är " + playersScore);
+                    System.out.println(playerName + "s totala score är " + playersScore);
                     System.out.println("Datorns totala score är " + computerScore);
 
                     if (playersScore > computerScore) {
-                        System.out.println(playerName + " Vinner");
+                        System.out.println(playerName + " vinner");
                         System.out.println(playersScore + " Tillagt i highscore.");
                         System.out.println("________________________");
                         higscore[checker] = playersScore;
@@ -62,7 +62,7 @@ public class Dicegame {
                         checker++;
 
 
-                    } else  {
+                    } else {
                         System.out.println("Det blev lika, inget score tillagt.");
 
                     }
