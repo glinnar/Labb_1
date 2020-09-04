@@ -73,6 +73,7 @@ public class Dicegame {
                     printHighScoreList(sortHighScoreList(higscore));
 
                     break;
+
                 case 3:
                     System.out.println("Du har valt att avsluta spelet");
                     gameOn = false;
