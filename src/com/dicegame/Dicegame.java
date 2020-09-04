@@ -8,9 +8,9 @@ public class Dicegame {
         Scanner scanner = new Scanner(System.in);
         int higscore[] = new int[100];
         int playerThrows;
+        int computerThrows;
         int amountOfThrows;
         int sideOfDice = 6;
-        int computerThrows;
         int playersScore = 0;
         int computerScore = 0;
         int menuChoice;
@@ -62,8 +62,8 @@ public class Dicegame {
                         checker++;
 
 
-                    } else if (playersScore == computerScore) {
-                        System.out.println("Lika");
+                    } else  {
+                        System.out.println("Det blev lika, inget score tillagt.");
 
                     }
                     break;
