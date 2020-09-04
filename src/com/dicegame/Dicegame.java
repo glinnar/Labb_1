@@ -69,12 +69,12 @@ public class Dicegame {
                     break;
 
                 case 2:
-                    System.out.println("Du har valt  att visa highscorelistan");
+                    System.out.println("Du har valt att visa highscorelistan");
                     printHighScoreList(sortHighScoreList(higscore));
 
                     break;
                 case 3:
-                    System.out.println("Du har valt  att avsluta spelet");
+                    System.out.println("Du har valt att avsluta spelet");
                     gameOn = false;
                     break;
 
